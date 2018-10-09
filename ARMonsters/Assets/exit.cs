@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class SceneChange : MonoBehaviour {
+
+public class exit : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -14,8 +15,10 @@ public class SceneChange : MonoBehaviour {
 	void Update () {
 		
 	}
-    public void ChangeScene()
+
+	public void exitApp()
     {
-        SceneManager.LoadScene("App");
+        Application.Quit();
+        
     }
 }
